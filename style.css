@@ -457,6 +457,7 @@ body{
 }
 
 .bride-text p{
+    width: 95%;
     font-size:15px;
     line-height:18px;
     color:#5d130a;

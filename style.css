@@ -448,7 +448,7 @@ body{
 
 .bride-text h2{
     font-family:'Allura', cursive;
-    font-size:28px;
+    font-size:1.9vw;
     font-weight:400;
     color:#5d130a;
     margin-top:-3px;
@@ -458,7 +458,7 @@ body{
 
 .bride-text p{
     width: 95%;
-    font-size:15px;
+    font-size:0.9vw;
     line-height:18px;
     color:#5d130a;
 }
@@ -491,19 +491,19 @@ body{
 
 .groom-content h2{
     font-family:'Allura', cursive;
-    font-size:28px;
+    font-size:1.9vw;
     width:200px;
     margin-left: -25px;
     margin-top: -10px;
     font-weight:400;
     color:#5d130a;
-    margin-bottom:20px;
+    margin-bottom:15px;
 }
 
 .groom-content p{
-    font-size:15px;
+    font-size:0.9vw;
     line-height:19px;
-    width: 90%;
+    width: 98%;
     margin-left: -2%;
     margin-top: -2%;
     text-align: center;
@@ -520,7 +520,7 @@ body{
 .straight-pearl{
     position:absolute;
     width:108%;
-    top:17.2%;
+    top:17%;
     left:-0.8%;
     z-index:2;
 }
@@ -588,9 +588,9 @@ body{
 
 .end-flowers{
     position:absolute;
-    width:380px;
+    width:395px;
     bottom:0;
-    left:0px;
+    left:0.5px;
     top:510px;
     z-index:4;
 }

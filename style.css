@@ -1,0 +1,615 @@
+@import url('https://fonts.cdnfonts.com/css/malibu-ring');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#f8f3f1;
+}
+
+.page{
+    position:relative;
+    width:390px;
+    height:750px;
+    overflow:hidden;
+}
+
+/* Cream background */
+
+.cream-bg{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Maroon Arch */
+
+.arch{
+    position:absolute;
+    left:45px;
+    top:35px;
+    width:300px;
+    height:675px;  
+    background:#6f1822;
+    border-radius:150px 150px 0 0;
+}
+
+/* Pink Flowers */
+
+.flowers{
+    position:absolute;
+    width:200px;
+    top:10px;
+    right:-5px;
+    z-index:3;
+}
+
+/* Couple */
+
+.couple{
+    position:absolute;
+    width:245px;
+    left:72px;
+    bottom:40px;
+    z-index:4;
+}
+
+/* Names */
+
+.names{
+    position:absolute;
+    top:250px;
+    width:100%;
+    text-align:center;
+    color:white;
+    z-index:5;
+
+    /* Required */
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.names::before{
+    content:"";
+    position:absolute;
+
+    width:150px;          /* Increase or decrease logo size */
+    height:150px;
+
+    background:url("images/ArabicLogo.png") no-repeat center;
+    background-size:contain;
+
+    opacity:0.11;         /* Transparency */
+
+    top:-23px;             /* Move logo up/down */
+    left:50%;
+    transform:translateX(-50%);
+
+    z-index:-1;           /* Places logo behind the text */
+}
+
+.names h1{
+    font-family:'Allura',cursive;
+    font-size:48px;
+    font-weight:400;
+    line-height:0.5;
+}
+
+.names span{
+    display:block;
+    margin:12px 0;
+    font-size:30px;
+    font-family:'Cormorant Garamond',serif;
+}
+
+/* =====================================
+        INVITATION SECTION
+===================================== */
+
+.invitation{
+    position:relative;
+    width:390px;
+    height:750px;
+    margin:auto;
+    overflow:hidden;
+    background: #FAF7F2;
+}
+
+/* Left Flowers */
+
+.left-flowers{
+    position:absolute;
+    width:145px;
+    left:-55px;
+    top:270px;
+    z-index:2;
+}
+
+/* Bismillah */
+
+.bismillah{
+    position:absolute;
+    width:145px;
+    left:50%;
+    transform:translateX(-50%);
+    top:40px;
+    z-index:3;
+}
+
+
+/* Invitation Text */
+
+.invite-text{
+    position:absolute;
+    top:113px;
+    width:100%;
+    text-align:center;
+    color:#7c3c3c;
+    z-index:4;
+}
+
+.invite-text p{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:13px;
+
+    line-height:1.55;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+}
+
+/* Date */
+
+.date{
+    position: absolute;
+    width: 100%;
+    top: 218px;
+    z-index: 5;
+}
+
+/* 09 */
+.day{
+    position: relative;
+    left: 135px;
+    top: -16px;
+}
+
+/* August */
+.month{
+    position: relative;
+    left: 110px;
+    top: -18px;
+}
+
+/* 2026 */
+.year{
+    position: relative;
+    left: 203px;
+    top: -21px;
+}
+
+.date h1{
+
+    margin:0;
+
+    font-size:90px;
+
+    color:#7c0000;
+
+    line-height:1;
+
+    font-family:'Bodoni Moda', serif;
+
+}
+
+.date h2{
+
+    margin-top:-35px;
+
+    font-size:57px;
+
+    font-family:'Allura', cursive;
+
+    color:#b59772;
+
+    font-weight:400;
+
+}
+
+.date h3{
+
+    margin-top:-20px;
+
+    font-size:21px;
+
+    color:#4b2a2a;
+
+    letter-spacing:6px;
+
+    font-family:'Yeseva One', serif;
+
+}
+
+.time-card{
+    position: relative;
+    width: 100px;
+    height: 500px;
+}
+
+.date-bg{
+    position: absolute;
+    width: 290px;
+    left: 50px;
+    top: 270px;
+    z-index: 1;
+}
+
+.bow{
+    position: absolute;
+    width: 105px;
+    top: 379px;
+    right: -264px;
+    z-index: 2;
+    transform: rotate(-11deg);
+}
+
+.time-content{
+    position: absolute;
+    width: 100%;
+    top: 390px;
+    text-align: center;
+    z-index: 3;
+    color: #6f1822;
+}
+
+.mark-time{
+    position: absolute;
+    top: 55px;
+    left: 92px;
+    width: 200px;
+    font-family: 'Alex Brush', cursive;
+    font-size: 10px;
+}
+
+.time{
+    position: absolute;
+    top: 90px;
+    left: 95px;
+    width: 200px;
+    font-family: 'Yeseva One', serif;
+    font-size: 25px;
+}
+
+.quote{
+    position: absolute;
+    top: 140px;
+    left: 100px;
+    width: 200px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 10px;
+    line-height: 1.1;
+}
+
+/* Mark Your Time */
+.time-content h2{
+    font-family: 'Alex Brush', cursive;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 1.5px
+}
+
+/* 11:30 AM */
+.time-content h1{
+    margin-top: 40px;
+    font-family: 'Yeseva One', serif;
+    font-size: 30px;
+}
+
+.time-content p{
+    margin-top: 40px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.pearls{
+    position: absolute;
+    width: 270px;
+    left: -48px;
+    top: 558px;
+    z-index: 4;
+    transform: rotate(37deg);
+}
+
+
+/* Page 3 */
+
+.page3{
+    width:390px;
+    min-height: 750px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    background:#FAF7F2;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.venue-box{
+    position:relative;
+    width:390px;
+    height:410px;
+    left:3px;
+    top:-1px;
+}
+
+.venue-bg{
+    width:380px;
+    max-width:100%;
+}
+
+.venue-content{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    text-align:center;
+    color:#F7E8D8;
+}
+
+.venue-title{
+    font-family:'Times New Roman';
+    font-size:37px;
+    font-weight:400;
+    margin-top:28px;
+}
+
+
+.hall-name{
+    font-family:'Times New Roman';
+    font-size:25px;
+    margin-top:25px;
+}
+
+.hall-place{
+    font-family:'Aniyah', cursive;
+    font-size:16px;
+    margin-top:4px;
+}
+
+.qr{
+    width:87px;
+    margin-top:12px;
+}
+
+.tap-location{
+    font-size:16px;
+    margin-top:7px;
+    line-height:20px;
+}
+
+.countdown-section{
+    text-align:center;
+    margin-top:-60px;
+}
+
+.countdown-heading{
+    font-family:'Allura', cursive;
+    font-size:33px;
+    font-weight:400;
+    margin-top: 8px;
+    color:#8A3D3D;
+}
+
+.countdown{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    margin-top:1px;
+}
+
+.time-box span{
+    font-size:40px;
+    font-family:'Allura', cursive;
+    display:inline-block;
+}
+
+.change {
+    animation: scrollUp 0.4s ease;
+}
+
+@keyframes scrollUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.time-box p{
+    margin-top:-6px;
+    font-family:'Allura', cursive;
+    font-size:21px;
+}
+
+.about-bride{
+    display:flex;
+    align-items:center;
+    margin-top:40px;
+}
+
+.bride-img{
+    width:190px;
+    border-radius:0 130px 130px 0;
+}
+
+.bride-text{
+    padding-left:10px;
+    text-align:center;
+}
+
+.bride-text h2{
+    font-family:'Allura', cursive;
+    font-size:28px;
+    font-weight:400;
+    color:#5d130a;
+    margin-top:-3px;
+    margin-right:19px;;
+    margin-bottom:5px;
+}
+
+.bride-text p{
+    font-size:15px;
+    line-height:18px;
+    color:#5d130a;
+}
+
+/* Page 4 */
+
+.last-page{
+    width:390px;
+    height:750px;
+    background:#FAF7F2;
+    position:relative;
+    overflow:hidden;
+}
+
+.about-groom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:40px 25px;
+}
+
+.groom-content{
+    width:170px;
+    padding-left:10px;
+    margin-top: -10px;
+    text-align:center;
+}
+
+.groom-content h2{
+    font-family:'Allura', cursive;
+    font-size:28px;
+    width:200px;
+    margin-left: -25px;
+    margin-top: -10px;
+    font-weight:400;
+    color:#5d130a;
+    margin-bottom:20px;
+}
+
+.groom-content p{
+    font-size:15px;
+    line-height:19px;
+    width: 170px;
+    margin-left: -15px;
+    margin-top: -15px;
+    text-align: center;
+    color:#5d130a;
+}
+
+.groom-photo{
+    width:190px;
+    border-radius:120px 0 0 120px;
+    margin-top: -35px;
+    margin-left: 8px;
+}
+
+.straight-pearl{
+    position:absolute;
+    width:108%;
+    top:141px;
+    left:-3px;
+    z-index:2;
+}
+
+.middle-logo{
+    position:absolute;
+    width:130px;
+    left:130px;
+    top:280px;
+    z-index:3;
+}
+
+.maroon-box{
+    position:absolute;
+    width:100%;
+    bottom:0;
+    left:0;
+    z-index:1;
+}
+
+.blessing-box{
+    position:absolute;
+    top:420px;
+    width:100%;
+    text-align:center;
+    z-index:3;
+}
+
+.blessing-box p{
+    font-family:'Lora', serif;
+    width: 410px;
+    font-size:12px;
+    font-weight:400;
+    line-height:1.5;
+    letter-spacing: 0.6px;
+    margin-left: -10px;
+    color:white;
+    padding:0 35px;
+}
+
+.save-date{
+    width:250px;
+    margin-top:-74px;
+}
+
+.save-text{
+    position:absolute;
+    top:166px;
+    left:152px;
+    font-family:'Allura', cursive;
+    font-size:18px;
+    font-weight: 590;
+    color:#7B1E26;
+}
+
+.date-text{
+    position:absolute;
+    top:215px;
+    left:150px;
+    font-family:'Allura', cursive;
+    font-size:18px;
+    font-weight: 600;
+    color:#7B1E26;
+}
+
+.end-flowers{
+    position:absolute;
+    width:380px;
+    bottom:0;
+    left:0px;
+    top:510px;
+    z-index:4;
+}

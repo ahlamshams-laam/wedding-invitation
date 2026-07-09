@@ -502,9 +502,9 @@ body{
 .groom-content p{
     font-size:15px;
     line-height:19px;
-    width: 170px;
-    margin-left: -15px;
-    margin-top: -15px;
+    width: 90%;
+    margin-left: -2%;
+    margin-top: -2%;
     text-align: center;
     color:#5d130a;
 }
@@ -519,8 +519,8 @@ body{
 .straight-pearl{
     position:absolute;
     width:108%;
-    top:141px;
-    left:-3px;
+    top:17.2%;
+    left:-0.8%;
     z-index:2;
 }
 

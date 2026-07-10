@@ -568,8 +568,8 @@ body{
 
 .save-text{
     position:absolute;
-    top:22.13%;
-    left:38.97%;
+    top:166px;
+    left:152px;
     font-family:'Allura', cursive;
     font-size:clamp(16px, 4.62vw, 18px);
     font-weight: 590;
@@ -578,8 +578,8 @@ body{
 
 .date-text{
     position:absolute;
-    top:28.67%;
-    left:38.46%;
+    top:215px;
+    left:150px;
     font-family:'Allura', cursive;
     font-size:18px;
     font-weight: 600;

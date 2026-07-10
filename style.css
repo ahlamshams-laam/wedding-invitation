@@ -528,7 +528,7 @@ body{
 .middle-logo{
     position:absolute;
     width:130px;
-    left:130px;
+    left:32%;
     top:280px;
     z-index:3;
 }

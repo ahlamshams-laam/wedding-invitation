@@ -568,7 +568,7 @@ body{
 
 .save-text{
     position:absolute;
-    top:22%;
+    top:22.13%;
     left:38.97%;
     font-family:'Allura', cursive;
     font-size:clamp(16px, 4.62vw, 18px);
@@ -578,7 +578,7 @@ body{
 
 .date-text{
     position:absolute;
-    top:28%;
+    top:28.67%;
     left:38.46%;
     font-family:'Allura', cursive;
     font-size:18px;
